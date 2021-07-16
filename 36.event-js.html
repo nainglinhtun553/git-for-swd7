@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events in Javascript</title>
+</head>
+<body>
+	<input type="button" value="click me" id="btn" onmouseover="changeinputmouseover();" onmouseout="changeinputmouseout();">
+	
+
+	<script>
+
+
+		//for onmouseover function
+		function changeinputmouseover(){
+			var btn =document.getElementById('btn');
+			btn.style.background='red';
+			btn.style.color='green';
+
+		}
+
+
+		//for onmouseout function
+		function changeinputmouseout(){
+			var btn=document.getElementById('btn');
+			btn.style.background='gray';
+			btn.style.color='white';
+
+		}
+	</script>
+</body>
+</html>

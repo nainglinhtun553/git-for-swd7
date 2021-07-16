@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event in javascript</title>
+
+</head>
+<body>
+	 <input type="button" value="Click Me" id="btn">
+
+	<script>
+	document.getElementById('btn').onclick=handle1;
+	//overwrite 
+	document.getElementById('btn').onclick=handle;
+		function handle(){
+			alert("Hello World");
+		}
+
+
+		function handle1(){
+			alert("Hello javascript");
+		}
+	</script>
+</body>
+</html>

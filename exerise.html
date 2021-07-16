@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exerise lessons</title>
+</head>
+<body>
+		
+		<input type="submit" value="Submit" id="btn" >
+		<script>
+
+			document.getElementById('btn').onclick=handle1;
+			//overwrite
+			document.getElemntById('btn').onclick=handle2;
+			function handle1(){
+				window.alert('Hello World');
+			}
+
+			function handle2(){
+				window.alert('Hello Javascript');
+			}
+		</script>
+
+		
+
+
+
+</body>
+</html>

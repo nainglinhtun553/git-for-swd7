@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Advanced Tutorials</title>
+</head>
+<body>
+	<input type="button" id="btn" value="Click Me">
+	<!-- <input type="button"  value="Remove Event" onclick="removeFunction();"> -->
+
+	<script>
+
+	// btn.addEventListener('mouseover',changemouseover);
+	// btn.addEventListener('mouseout',changemouseout);
+
+	btn.addEventListener('click',handler1);
+	btn.addEventListener('click',handler2);
+
+	function handler1(){
+		alert('handler1');
+	}
+
+
+	function handler2(){
+		alert('handler2');
+	}
+
+	// function changemouseover(){
+		
+		
+	// 	this.style.background='yellow';
+	// 	this.style.color='red';
+	// }
+
+
+	// function changemouseout(){
+		
+		
+	// 	this.style.background='black';
+	// 	this.style.color='white';
+	// }
+
+
+	// function removeFunction(){
+	// 	btn.removeEventListener('mouseover',changemouseover);
+	// 	btn.removeEventListener('mouseout',changemouseout);
+	// }
+
+	</script>
+	
+</body>
+</html>

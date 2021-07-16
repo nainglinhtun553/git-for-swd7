@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events in Javascript</title>
+</head>
+<body>
+		<form action="">
+			<table>
+				<tr>
+
+				<!-- important note: onkeyup using associated with onblue event. -->
+					<td>First Name:</td>
+					<td><input type="text" id="firstname" onkeyup="changebackground('firstname')" onblur="changebackground('firstname')"></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><input type="text" id="lastname"  onkeyup="changebackground('lastname')" onblur="changebackground('lastname')"></td>
+				</tr>
+			</table>
+		</form>
+	
+
+	<script>
+		// controlId mean both the above ids.
+		function changebackground(controlID){
+			var control=document.getElementById(controlID);
+			control.style.background='white';
+
+			// checking condition
+			if(control.value ==''){
+				control.style.background='red';
+
+			}else{
+				control.style.background='green';
+			}
+		}
+	</script>
+</body>
+</html>
